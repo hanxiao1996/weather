@@ -133,21 +133,24 @@ $(".audioBtn").click(function(event){
         		show:false,
         		data:x
         	},
-            grid: [
-              { left:0,
-              }
-              ],
+            grid: 
+              { left:0,right:0,
+                top:5,
+                bottom:5
+
+              },
+       
         	yAxis: {
         		show:false,
         	},
         	series: [{
 
-        		name: '销量',
+        		name: '最高气温',
         		type: 'line',
         		data:high
 
         	},{
-        		name: '销量',
+        		name: '最低气温',
         		type: 'line',
         		data:low
         	}]
